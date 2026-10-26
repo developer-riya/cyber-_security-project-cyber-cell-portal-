@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "cyber-uday-20"
+  },
+  "targets": {
+    "cyber-uday-20": {
+      "hosting": {
+        "production": [
+          "cyber-uday-20"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

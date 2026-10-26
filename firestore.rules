@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function sameUser(userId) { return signedIn() && request.auth.uid == userId; }
+
+    match /case_tracking/{caseId} {
+      allow read: if sameUser(resource.data.userId);
+      allow write: if false;
+    }
+
+    match /notifications/{notificationId} {
+      allow read: if sameUser(resource.data.userId);
+      allow update: if sameUser(resource.data.userId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['read']);
+      allow create, delete: if false;
+    }
+
+    match /case_information_requests/{requestId} {
+      allow read: if sameUser(resource.data.userId);
+      allow write: if false;
+    }
+
+    match /cyber_cell_cases/{caseId} {
+      allow read, write: if false;
+      match /history/{historyId} { allow read, write: if false; }
+    }
+
+    match /system/{documentId} { allow read, write: if false; }
+  }
+}

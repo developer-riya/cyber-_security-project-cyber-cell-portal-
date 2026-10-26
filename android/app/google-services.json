@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1010516097616",
+    "project_id": "cyber-uday-20",
+    "storage_bucket": "cyber-uday-20.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010516097616:android:89722108574db1c6e8ef55",
+        "android_client_info": {
+          "package_name": "com.example.cyberuday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010516097616-sk8iiqr3m6c581b5ijfug6sh6e4rr70d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cyberuday",
+            "certificate_hash": "2ebb97c19c3f3497d0eeb33fd72e735a7df1c2dc"
+          }
+        },
+        {
+          "client_id": "1010516097616-squ252hmqem4o8fvj75mnpqa4ak7o7qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsE4AmaOxpNQmp_YDfNd3iXYt0g0CbUr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010516097616-squ252hmqem4o8fvj75mnpqa4ak7o7qp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1010516097616-dc1lrqm5c15nsf5cj72k681eh3jugvpv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cyberuday"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

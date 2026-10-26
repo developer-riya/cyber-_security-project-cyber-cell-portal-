@@ -1,0 +1,30 @@
+{
+  "name": "cyber-uday-threat-intelligence-proxy",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Indicator-only Cyber Uday threat-intelligence proxy.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test lib/*.test.js"
+  },
+  "dependencies": {
+    "firebase-admin": "14.3.0",
+    "firebase-functions": "7.3.2",
+    "undici": "8.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "24.10.13",
+    "@types/supertest": "6.0.3",
+    "supertest": "7.2.2",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
+  }
+}

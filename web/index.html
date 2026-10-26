@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cyber Uday is an AI-powered cybersecurity platform that protects users from phishing, scams, malicious links, online fraud, fake websites, digital threats, and cyber attacks.">
+  <meta name="keywords" content="Cyber Security, Cyber Uday, AI Security, Digital Bodyguard, Scam Detection, Malware Detection, Phishing Protection, Fraud Detection, Cyber Awareness, Online Safety, Digital Protection">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Cyber Uday">
+  <meta name="application-name" content="Cyber Uday">
+  <meta name="theme-color" content="#000000">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Cyber Uday">
+  <link rel="canonical" href="https://cyberuday.in">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cyber Uday">
+  <meta property="og:title" content="Cyber Uday – A Digital Bodyguard">
+  <meta property="og:description" content="Protect yourself from scams, phishing, fake links, online fraud, malware and cyber attacks using Cyber Uday.">
+  <meta property="og:url" content="https://cyberuday.in">
+  <meta property="og:image" content="https://cyberuday.in/assets/logo.png">
+  <meta property="og:image:secure_url" content="https://cyberuday.in/assets/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cyber Uday – A Digital Bodyguard">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cyber Uday – A Digital Bodyguard">
+  <meta name="twitter:description" content="AI-powered cybersecurity platform for everyone.">
+  <meta name="twitter:image" content="https://cyberuday.in/assets/logo.png">
+  <meta name="twitter:image:alt" content="Cyber Uday – A Digital Bodyguard">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Cyber Uday – A Digital Bodyguard</title>
+  <style>
+    #cyber-uday-launch {
+      position: fixed;
+      inset: 0;
+      z-index: 2147483647;
+      display: grid;
+      place-items: center;
+      box-sizing: border-box;
+      padding: 24px;
+      background: #ffffff;
+      color: #111827;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      opacity: 1;
+      transition: opacity 180ms ease-out, visibility 180ms ease-out;
+    }
+
+    #cyber-uday-launch.is-complete {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .cyber-uday-launch__content {
+      display: flex;
+      width: min(100%, 420px);
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cyber-uday-launch__mark {
+      width: clamp(104px, 18vw, 148px);
+      height: clamp(104px, 18vw, 148px);
+      object-fit: contain;
+    }
+
+    .cyber-uday-launch__name {
+      margin: 28px 0 8px;
+      color: #111827;
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 760;
+      letter-spacing: 0;
+      line-height: 1.1;
+    }
+
+    .cyber-uday-launch__tagline {
+      margin: 0;
+      color: #0f766e;
+      font-size: clamp(16px, 3vw, 20px);
+      font-weight: 650;
+      line-height: 1.35;
+    }
+
+    .cyber-uday-launch__progress {
+      width: min(220px, 72vw);
+      height: 4px;
+      margin-top: 42px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #dce8e7;
+    }
+
+    .cyber-uday-launch__progress::after {
+      display: block;
+      width: 44%;
+      height: 100%;
+      border-radius: inherit;
+      background: #14b8a6;
+      content: "";
+      animation: cyber-uday-loading 1.15s ease-in-out infinite;
+    }
+
+    .cyber-uday-launch__status {
+      margin: 14px 0 0;
+      color: #6b7280;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    @keyframes cyber-uday-loading {
+      0% { transform: translateX(-115%); }
+      100% { transform: translateX(240%); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #cyber-uday-launch {
+        transition: none;
+      }
+
+      .cyber-uday-launch__progress::after {
+        width: 100%;
+        animation: none;
+      }
+    }
+  </style>
+  <script>
+    (() => {
+      const productTitle = 'Cyber Uday – A Digital Bodyguard';
+      const applyProductTitle = () => {
+        if (document.title !== productTitle) {
+          document.title = productTitle;
+        }
+      };
+
+      applyProductTitle();
+      new MutationObserver(applyProductTitle).observe(document.head, {
+        childList: true,
+        characterData: true,
+        subtree: true,
+      });
+    })();
+  </script>
+</head>
+<body>
+  <div id="cyber-uday-launch" role="status" aria-live="polite" aria-label="Opening Cyber Uday">
+    <div class="cyber-uday-launch__content">
+      <img class="cyber-uday-launch__mark" src="assets/assets/cyber_uday_mark.png" alt="Cyber Uday">
+      <div class="cyber-uday-launch__name">CYBER UDAY</div>
+      <p class="cyber-uday-launch__tagline">Your Digital Bodyguard</p>
+      <div class="cyber-uday-launch__progress" aria-hidden="true"></div>
+      <p class="cyber-uday-launch__status">Preparing your secure workspace</p>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', () => {
+      const launchScreen = document.getElementById('cyber-uday-launch');
+      if (launchScreen === null) return;
+      launchScreen.classList.add('is-complete');
+      window.setTimeout(() => launchScreen.remove(), 200);
+    }, { once: true });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
